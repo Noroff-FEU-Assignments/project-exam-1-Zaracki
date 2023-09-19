@@ -46,12 +46,13 @@ li, a {
 
 .hero-container {
   height: 500px;
-  max-width: 1120px;
+  max-width: 1020px;
   margin: auto;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 100px;
 }
 
 .hero-container img {
@@ -76,7 +77,8 @@ li, a {
   margin-bottom: 20px;
 }
 
-.img-overlay {
+.img-overlay,
+.carousel-img {
   position: relative;
   width: 500px;
   height: auto;
@@ -103,4 +105,66 @@ gap: 10px;
 border-radius: 8px;
 background: #D8B320;
 font-weight: bold;
+}
+
+.recent-reviews h2 {
+margin-left: 205px;
+margin-bottom: 10px;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.wrapper {
+  max-width: 1020px;
+  position: relative;
+}
+
+.wrapper i {
+top: 40%;
+cursor: pointer;
+position: absolute;
+font-size: 30px;
+text-align: center;
+line-height: 46px;
+}
+
+.wrapper i:first-child {
+  left: -23px;
+}
+
+.wrapper i:last-child {
+  right: -23px;
+}
+
+.wrapper .carousel {
+  white-space: nowrap;
+  overflow: hidden;
+  display: flex;
+}
+
+.carousel .carousel-img{
+  height: 236px;
+  object-fit: cover;
+  width: 327px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.carousel-img:first-child {
+  margin-left: 0px;
+}
+
+.lowerleft-carousel {
+  font-size: 18px;
+  max-width: 320px;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  overflow: visible;
+  white-space: wrap;
 }
