@@ -1,0 +1,47 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  max-width: 1020px;
+  justify-content: center;
+  margin: auto;
+}
+
+.content-rendered h2 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.container img {
+  max-height: 400px;
+  object-fit: cover;
+  margin-bottom: 10px ;
+}
+
+.content-rendered p,
+.content-rendered blockquote {
+  margin-bottom: 20px;
+}
+.content-rendered p {
+  font-size: 18px;
+  color: #E4E4E4;
+}
+
+.container h1 {
+  margin-bottom: 30px;
+}
+
+.content-rendered blockquote{
+  border: 2px solid #D8B320;
+}
+
+.content-rendered blockquote p {
+  text-align: center;
+  margin: 10px 0px 10px;
+  font-size: 24px;
+}
+
+.content-rendered img {
+  margin: auto;
+  display: flex;
+  margin-top: 40px;
+}
