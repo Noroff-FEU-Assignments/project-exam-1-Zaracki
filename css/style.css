@@ -14,6 +14,8 @@ body {
   color: var(--main-white);
   background-color: var(--main-background);
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   
 }
 
@@ -355,9 +357,11 @@ line-height: 46px;
 
 
 footer {
-  margin-top: auto;
+  width: 100%;
+  bottom: 0px;
   color: var(--main-white);
   background-color: #14161B;
+  margin-top: auto;
 }
 .copy-2022 {
   cursor: pointer;
