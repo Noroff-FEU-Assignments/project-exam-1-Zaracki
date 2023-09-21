@@ -62,6 +62,9 @@ li, a {
   font-size: 20px;
   color: var(--main-white);
 }
+.nav-active {
+  text-decoration: underline;
+}
 
 /* Homepage */
 
@@ -181,6 +184,12 @@ text-align: center;
 line-height: 46px;
 }
 
+.wrapper i:hover,
+.carousel-img:hover,
+.subscribe-btn:hover {
+  opacity: 0.5;
+}
+
 .wrapper i:first-child {
   left: -23px;
 }
@@ -278,9 +287,6 @@ line-height: 46px;
   cursor: pointer;
 }
 
-.subscribe-btn:hover {
-  background-color: #1A1D24;
-}
 
 
 footer {
