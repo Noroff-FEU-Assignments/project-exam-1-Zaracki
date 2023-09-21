@@ -20,14 +20,21 @@
 .content-rendered p,
 .content-rendered blockquote {
   margin-bottom: 20px;
+  font-family: roboto;
 }
 .content-rendered p {
   font-size: 18px;
   color: #E4E4E4;
+  font-weight: 400;
 }
 
 .container h1 {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  font-family: Roboto Condensed;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .content-rendered blockquote{
@@ -37,7 +44,8 @@
 .content-rendered blockquote p {
   text-align: center;
   margin: 10px 0px 10px;
-  font-size: 24px;
+  font-size: 22px;
+  font-weight: 500;
 }
 
 .content-rendered img {

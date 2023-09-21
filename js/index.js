@@ -1,4 +1,4 @@
-const apiUrl = "https://a33.no/wp-json/wp/v2/posts/88?_embed";
+const apiUrl = "https://a33.no/wp-json/wp/v2/posts/70?_embed";
 
 const resultsContainer = document.querySelector(".container");
 
