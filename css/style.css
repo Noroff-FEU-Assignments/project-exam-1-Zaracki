@@ -2,8 +2,8 @@
 
 
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
@@ -14,6 +14,7 @@ body {
   color: var(--main-white);
   background-color: var(--main-background);
   min-height: 100vh;
+  
 }
 
 :root {
@@ -28,7 +29,7 @@ h2 {
 }
 
 /* Header */
-
+/*
 header {
   background-color: var(--nav-dark);
   top: 0;
@@ -64,7 +65,71 @@ li, a {
 }
 .nav-active {
   text-decoration: underline;
+}*/
+
+
+header {
+  background-color: var(--nav-dark);
+  top: 0;
+  position: sticky;
+  z-index: 999;
+  display: flex;
 }
+
+header, header nav {
+  height: 100px;
+}
+
+header nav {
+  color: white;
+  width: 100%;
+  max-width: 1020px;
+  margin: auto;
+}
+
+
+header nav ul{
+  float: right;
+}
+
+header nav ul li {
+  display: inline-block;
+  line-height: 100px;
+  margin: 0 9px;
+}
+
+header nav ul li:last-child {
+  margin-right: 0px;
+}
+
+header nav ul li a {
+  color: var(--main-white);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.checkbox {
+  font-size: 30px;
+  float: right;
+  line-height: 90px;
+  margin-right: 210px;
+  cursor: pointer;
+  display: none;
+  margin-top: 8px;
+}
+
+#check {
+  display: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+.active {
+  text-decoration: underline;
+}
+
 
 /* Homepage */
 
@@ -323,4 +388,77 @@ footer a {
 .nav-list span,
 .fa-cart-shopping span {
   display: none;
+}
+
+
+@media (max-width: 1070px) {
+  .logo {
+    margin-left: 36px;
+  }
+  header nav ul li a {
+    font-size: 16px;
+  }
+  header nav ul, .checkbox {
+    margin-right: 36px;
+  }
+
+  .hero-container {
+    flex-direction: column;
+  }
+
+  .hero-container {
+    margin-bottom: 300px;
+    max-width: 675px;
+  }
+
+  .hero-text {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .wrapper,
+  .recent-reviews h2 {
+    max-width: 675px;
+  }
+
+}
+
+@media (max-width: 725px){
+  .checkbox {
+    display: block;
+  }
+  header nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--nav-dark);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    z-index: 9999;
+  }
+  header nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  header nav ul li a {
+    font-size: 20px;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  .wrapper,
+  .recent-reviews h2 {
+    max-width: 328px;
+  }
+
+}
+
+@media (max-width: 500px) {
+ 
+
+
 }
