@@ -255,6 +255,7 @@ line-height: 46px;
 .carousel-img:hover,
 .subscribe-btn:hover {
   opacity: 0.5;
+  transition: .5s;
 }
 
 .wrapper i:first-child {
@@ -399,9 +400,7 @@ footer a {
   .logo {
     margin-left: 36px;
   }
-  header nav ul li a {
-    font-size: 16px;
-  }
+
   header nav ul, .checkbox {
     margin-right: 36px;
   }
@@ -463,6 +462,5 @@ footer a {
 
 @media (max-width: 500px) {
  
-
 
 }
