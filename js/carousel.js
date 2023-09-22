@@ -15,3 +15,4 @@ arrowIcons.forEach(icon => {
 })
 
 //carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
+
