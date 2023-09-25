@@ -1,5 +1,6 @@
 const apiUrl = "https://a33.no/wp-json/wp/v2/posts?_embed";
 
+const heroImg = document.querySelector(".img-overlay")
 const carousel = document.querySelector(".carousel");
 const arrowIcons = document.querySelectorAll(".wrapper i");
 
@@ -14,6 +15,13 @@ async function renderHTML() {
     const json = await response.json();
 
     const posts = json.results;
+
+    for (let i = 0; i <= 0; i++) {
+      let currentJson = json[i];
+
+      heroImg.innerHTML += `<a href="post.html?id=${currentJson.id}"><img src="${currentJson._embedded["wp:featuredmedia"][0].source_url}" alt=""></a>
+      `
+    }
 
     for (let i = 1; i <= 9; i++) {
       let currentJson = json[i];
