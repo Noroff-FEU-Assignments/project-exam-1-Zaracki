@@ -20,7 +20,7 @@ async function renderHTML() {
 
       carousel.innerHTML += `
       <div class="carousel-img">
-      <a href="post.html"><img src="${currentJson._embedded["wp:featuredmedia"][0].source_url}"></a>
+      <a href="post.html?id=${currentJson.id}"><img src="${currentJson._embedded["wp:featuredmedia"][0].source_url}"></a>
       <div class="lowerleft-carousel">
         <p>${currentJson.title.rendered}</p>
       </div>

@@ -1,8 +1,16 @@
-const apiUrl = "https://a33.no/wp-json/wp/v2/posts/142?_embed";
+import {apiUrl, apiEmbeded} from "./components/constants.js";
+
+const queryString = document.location.search;
+
+const params = new URLSearchParams(queryString);
+
+const id = params.get("id");
+
+const apiUrlId = apiUrl + id + apiEmbeded;
 
 const resultsContainer = document.querySelector(".container");
 
-const response = await fetch(apiUrl);
+const response = await fetch(apiUrlId);
       const json = await response.json();
 
       resultsContainer.innerHTML = `<img src="${json._embedded["wp:featuredmedia"][0].source_url}">
