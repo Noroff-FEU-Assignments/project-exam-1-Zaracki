@@ -19,7 +19,12 @@ async function renderHTML() {
     for (let i = 0; i <= 0; i++) {
       let currentJson = json[i];
 
-      heroImg.innerHTML += `<a href="post.html?id=${currentJson.id}"><img src="${currentJson._embedded["wp:featuredmedia"][0].source_url}" alt=""></a>
+      heroImg.innerHTML += `
+      <a href="post.html?id=${currentJson.id}"><img src="${currentJson._embedded["wp:featuredmedia"][0].source_url}" alt=""></a>
+      <div class="lowerleft">
+        <p class="new-post">New</p>
+        <p>${currentJson.title.rendered}</p> 
+      </div>
       `
     }
 
