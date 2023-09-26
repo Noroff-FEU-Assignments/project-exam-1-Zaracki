@@ -14,7 +14,7 @@ async function renderHTML() {
 
       boxContainer.innerHTML += `
         <div class="box-img">
-          <a href="post.html?id=${currentJson.id}"><img src="${currentJson._embedded["wp:featuredmedia"][0].source_url}" alt=""></a>
+          <a href="post.html?id=${currentJson.id}"><img src="${currentJson._embedded["wp:featuredmedia"][0].source_url}" alt=" image of ${currentJson.title.rendered}"></a>
           <div class="lowerleft-carousel">
             <p>${currentJson.title.rendered}</p>
           </div>

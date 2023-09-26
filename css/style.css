@@ -238,22 +238,20 @@ line-height: 46px;
 }
 
 .carousel .carousel-img,
-.post-wrapper .carousel-img{
-  height: 236px;
-  object-fit: cover;
-  width: 327px;
-  margin-left: 20px;
-  cursor: pointer;
-}
-
-
+.post-wrapper .carousel-img,
 .carousel .carousel-img img,
-.post-wrapper .carousel-img img{
+.post-wrapper .carousel-img img {
   height: 236px;
   object-fit: cover;
   width: 327px;
   cursor: pointer;
   border-radius: 7px;
+}
+
+
+.carousel .carousel-img,
+.post-wrapper .carousel-img {
+  margin-left: 20px;
 }
 
 
@@ -320,6 +318,7 @@ line-height: 46px;
   border: none;
   background: #D8B320;
   cursor: pointer;
+  width: 116px;
 }
 
 
@@ -358,7 +357,7 @@ footer a {
 }
 
 .nav-list span,
-.fa-cart-shopping span {
+.fa-bars span {
   display: none;
 }
 
@@ -372,13 +371,18 @@ footer a {
     margin-right: 36px;
   }
 
+  .img-overlay img,
+  .img-overlay{
+    width: 100%;
+  }
+
   .hero-container {
     flex-direction: column;
   }
 
   .hero-container {
     margin-bottom: 300px;
-    max-width: 675px;
+    max-width: 100%;
   }
 
   .hero-text {
@@ -428,6 +432,43 @@ footer a {
 }
 
 @media (max-width: 500px) {
- 
+
+
+  .img-overlay img,
+  .img-overlay{
+    height: 320px;
+  }
+  
+  .hero-container {
+    height: 350px;
+  }
+
+  .wrapper i {
+  top: 100%;
+  }
+  
+  .wrapper i:first-child {
+    left: 130px;
+  }
+  
+  .wrapper i:last-child {
+    right: 130px;
+  }
+
+  .email-input {
+    flex-direction: column;
+    align-items: center;
+  }
+
 
 }
+
+
+
+
+<h2>Join our newsletter</h2>
+<p>Don´t miss out on our latest reviews by signing up for our newsletter. You will recive information weekly on our new reviews.</p>
+<div class="email-input">
+  <input type="email" placeholder="Email">
+  <button type="submit" class="subscribe-btn">Subscribe</button>
+</div>

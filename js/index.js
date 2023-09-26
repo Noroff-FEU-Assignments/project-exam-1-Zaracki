@@ -25,6 +25,9 @@ async function renderHTML() {
         <p class="new-post">New</p>
         <p>${currentJson.title.rendered}</p> 
       </div>
+      <div class="upperright">
+      <p>wall.alphacoders.com</p>
+    </div>
       `
     }
 
