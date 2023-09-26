@@ -118,7 +118,10 @@
     font-size: 18px;
   }
 
-
+  .container .popup img {
+    max-height: 100%;
+    width: 100%;
+  }
   
 }
 

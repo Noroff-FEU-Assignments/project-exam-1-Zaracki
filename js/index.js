@@ -1,3 +1,4 @@
+
 const apiUrl = "https://a33.no/wp-json/wp/v2/posts?_embed";
 
 const heroImg = document.querySelector(".img-overlay")
@@ -9,12 +10,15 @@ const arrowIcons = document.querySelectorAll(".wrapper i");
 
 
 
+
+
 async function renderHTML() {
   try {
+  
     const response = await fetch(apiUrl);
     const json = await response.json();
 
-    const posts = json.results;
+    
 
     for (let i = 0; i <= 0; i++) {
       let currentJson = json[i];
