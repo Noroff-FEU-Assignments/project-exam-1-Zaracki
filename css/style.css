@@ -135,7 +135,8 @@ header a:hover {
 }
 
 .img-overlay,
-.carousel-img {
+.carousel-img,
+.box-img {
   position: relative;
   width: 500px;
   height: auto;
