@@ -64,5 +64,6 @@
 #see-more:hover {
   color: black;
   background-color: #FFF;
+  transition: .5s;
 
 }
