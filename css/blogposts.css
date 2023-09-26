@@ -28,7 +28,10 @@
 .posts-container .box-container .box-img:nth-child(3),
 .posts-container .box-container .box-img:nth-child(4),
 .posts-container .box-container .box-img:nth-child(5),
-.posts-container .box-container .box-img:nth-child(6) {
+.posts-container .box-container .box-img:nth-child(6),
+.posts-container .box-container .box-img:nth-child(7),
+.posts-container .box-container .box-img:nth-child(8),
+.posts-container .box-container .box-img:nth-child(9) {
   display: inline-block;
 }
 

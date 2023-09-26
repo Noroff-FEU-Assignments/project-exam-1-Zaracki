@@ -41,7 +41,7 @@ renderHTML()
 
 
 const seeMoreBtn = document.querySelector("#see-more")
-let currentItem = 6;
+let currentItem = 9;
 
 seeMoreBtn.onclick = () => {
   let boxes = [...document.querySelectorAll(".posts-container .box-container .box-img")];
