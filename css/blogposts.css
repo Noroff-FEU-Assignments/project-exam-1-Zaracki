@@ -13,7 +13,11 @@
   grid-template-columns: repeat(auto-fit, minmax(326px, 1fr));
   gap: 20px;
 }
-/*start*/
+
+.posts-container .box-container .box-img .lowerleft-carousel {
+  text-align: start ;
+}
+
 .posts-container .box-container .box-img {
   display: none;
 }
@@ -27,6 +31,9 @@
   display: inline-block;
 }
 
+.posts-container .box-container .box-img:last-child {
+  margin-bottom: 100px;
+}
 
 .posts-container .box-container .box-img {
   margin-bottom: 20px;
