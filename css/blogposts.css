@@ -20,6 +20,7 @@
 
 .posts-container .box-container .box-img {
   display: none;
+  cursor: pointer;
 }
 
 .posts-container .box-container .box-img:nth-child(1),

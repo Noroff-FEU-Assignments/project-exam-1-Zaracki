@@ -1,9 +1,12 @@
-const apiUrl = "https://a33.no/wp-json/wp/v2/posts?_embed&per_page=100";
+import {apiUrl, apiEmbeded, apiPerPage} from "./components/constants.js";
+
+
+const apiUrlFetch = apiUrl + apiEmbeded + "&" + apiPerPage;
 const boxContainer = document.querySelector(".box-container");
 
 async function renderHTML() {
   try {
-    const response = await fetch(apiUrl);
+    const response = await fetch(apiUrlFetch);
     const json = await response.json();
 
     const posts = json.results;
