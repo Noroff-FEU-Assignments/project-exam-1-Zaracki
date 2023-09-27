@@ -99,11 +99,9 @@ header nav ul li a {
   display: none;
 }
 
-header a:hover {
-  text-decoration: underline;
-}
 
-.active {
+.active,
+header a:hover {
   text-decoration: underline;
   text-decoration-color: var(--main-orange);
 }
@@ -199,6 +197,7 @@ border-radius: 8px;
 background: #D8B320;
 font-weight: bold;
 border: none;
+color: var(--main-background);
 }
 
 .recent-reviews {
@@ -238,7 +237,9 @@ line-height: 46px;
 .carousel-img:hover,
 .subscribe-btn:hover,
 .img-overlay:hover,
-.box-img:hover {
+.box-img:hover,
+.cta-button:hover,
+.logo:hover {
   opacity: 0.5;
   transition: .5s;
 }

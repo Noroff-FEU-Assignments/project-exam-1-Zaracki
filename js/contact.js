@@ -23,13 +23,13 @@ function validateForm() {
     emailError.style.display = "block";
   }
 
-  if (checkLength(subject.value, 14) === true) {
+  if (subject.value.length > 14) {
     subjectError.style.display = "none";
   } else {
     subjectError.style.display = "block";
   }
 
-  if (checkLength(message.value, 24) === true) {
+  if (message.value.length > 24) {
     messageError.style.display = "none";
   } else {
     messageError.style.display = "block";
