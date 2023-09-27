@@ -1,3 +1,6 @@
+import {spinnerDiv, loadingDiv} from "./components/constants.js";
+import {displayError} from "./components/displayError.js";
+
 
 const apiUrl = "https://a33.no/wp-json/wp/v2/posts?_embed";
 
@@ -10,11 +13,9 @@ const arrowIcons = document.querySelectorAll(".wrapper i");
 
 
 
-
-
 async function renderHTML() {
   try {
-  
+    loadingDiv.innerHTML = spinnerDiv;
     const response = await fetch(apiUrl);
     const json = await response.json();
 
@@ -62,17 +63,16 @@ async function renderHTML() {
       })
     })
     
+    loadingDiv.innerHTML = "";
+
   }
 
   catch(error) {
-
+    loadingDiv.innerHTML = displayError();
   }
 
 
 }
 renderHTML()
 
-
-
-//carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
 

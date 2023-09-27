@@ -1,4 +1,4 @@
-import {apiUrl, apiEmbeded, apiPerPage} from "./components/constants.js";
+import {apiUrl, apiEmbeded, apiPerPage, spinnerDiv, loadingDiv} from "./components/constants.js";
 
 
 const apiUrlFetch = apiUrl + apiEmbeded + "&" + apiPerPage;
@@ -6,8 +6,12 @@ const boxContainer = document.querySelector(".box-container");
 
 async function renderHTML() {
   try {
+
+    loadingDiv.innerHTML = spinnerDiv;
     const response = await fetch(apiUrlFetch);
     const json = await response.json();
+
+    loadingDiv.innerHTML = "";
 
     const posts = json.results;
 
@@ -28,10 +32,11 @@ async function renderHTML() {
     }
 
     
+
   }
 
   catch(error) {
-
+    loadingDiv.innerHTML = displayError();
   }
 
 
