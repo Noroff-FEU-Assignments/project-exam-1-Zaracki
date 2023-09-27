@@ -44,32 +44,43 @@
       </ul>
     </nav>
   </header>
-  <main>
-    <section class="contact-container">
-        <img src="/images/contact-img.jpg">
-        <h1>Contact us</h1>
-        <form id="form" action="/">
-          <div class="input-container">
-            <input type="text" placeholder="Name" id="name">
-            <div class="error"></div>
-          </div>
-          <div class="input-container">
-            <input type="email" placeholder="Email" id="email">
-            <div class="error"></div>
-          </div>
-          <div class="input-container">
-            <input type="text" placeholder="Subject" id="subject">
-            <div class="error"></div>
-          </div>
-          <div class="input-container">
-            <textarea id="message" placeholder="Write your message here..."></textarea>
-            <div class="error"></div>
-          </div>
-          <button type="submit"></button>          
-        </form>
+  <main class="contact-container">
+    <img src="/images/contact-img.jpg">
+    <h1>Contact us</h1>
+    <form id="contactForm">
+      <div>
+        <label>
+          First name
+          <input name="firstName" id="firstName">
+        </label>
+        <div class="form-error" id="firstNameError">Must be more than 5 characters long</div>
+      </div>
 
-    </section>
-    
+      <div>
+        <label>
+          Email
+          <input name="email" id="email">
+        </label>
+        <div class="form-error" id="emailError">Must be a valid email address</div>
+      </div>
+
+      <div>
+        <label>
+          Subject
+          <input name="subject" id="subject">
+        </label>
+        <div class="form-error" id="subjectError">Must be more than 15 characters long</div>
+      </div>
+
+      <div>
+        <label>
+          Message
+          <textarea name="message" id="message"></textarea>
+        </label>
+        <div class="form-error" id="messageError">Must be more than 25 characters long</div>
+      </div>
+      <button>Submit</button>
+    </form>
   </main>
   <footer>
     <div class="social-position">
