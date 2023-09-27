@@ -40,6 +40,7 @@
 
 .content-rendered blockquote{
   border: 2px solid #D8B320;
+  margin-bottom: 40px;
 }
 
 .content-rendered blockquote p {
@@ -53,6 +54,10 @@
 .content-rendered div {
   display: flex;
   flex-direction: row;
+}
+
+.content-rendered div p {
+  margin-right: 40px;
 }
 
 .content-rendered img:nth-child(1) {
@@ -129,6 +134,8 @@
     font-size: 18px;
   }
 
+
+
   /* .content-rendered div {
     align-items: center;
   }
@@ -146,6 +153,10 @@
 
   .content-rendered div {
     flex-direction: column;
+  }
+
+  .content-rendered div p {
+    margin-right: 0px;
   }
 
   /* .content-rendered img:nth-child(1) {
