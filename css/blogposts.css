@@ -63,6 +63,7 @@
   border-radius: 20px;
   border: 2px solid #FFF;
   cursor: pointer;
+  margin-bottom: 30px;
 }
 
 #see-more:hover {

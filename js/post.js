@@ -1,4 +1,4 @@
-import {apiUrl, apiEmbeded} from "./components/constants.js";
+import {apiUrl, apiEmbeded, spinnerDiv, loadingDiv} from "./components/constants.js";
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
@@ -13,9 +13,12 @@ const resultsContainer = document.querySelector(".container");
 
       async function renderHTML() {
             try {
-
+            
+            loadingDiv.innerHTML = spinnerDiv;
             const response = await fetch(apiUrlId);
             const json = await response.json();
+
+            loadingDiv.innerHTML = "";
 
             resultsContainer.innerHTML = `
                   <img src="${json._embedded["wp:featuredmedia"][0].source_url}" class="headimg">
