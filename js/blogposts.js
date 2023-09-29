@@ -13,9 +13,6 @@ async function renderHTML() {
 
     loadingDiv.innerHTML = "";
 
-    const posts = json.results;
-
-
     for (let i = 0; i <= 20; i++) {
       let currentJson = json[i];
 
@@ -30,16 +27,10 @@ async function renderHTML() {
           </div>
         </div>`
     }
-
-    
-
   }
-
   catch(error) {
     loadingDiv.innerHTML = displayError();
   }
-
-
 }
 renderHTML()
 
