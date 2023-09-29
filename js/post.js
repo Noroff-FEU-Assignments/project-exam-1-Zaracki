@@ -44,7 +44,7 @@ const resultsContainer = document.querySelector(".container");
             }
           
             catch(error) {
-          
+                  loadingDiv.innerHTML = displayError();
             }
           
           
