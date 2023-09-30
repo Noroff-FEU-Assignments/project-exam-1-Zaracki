@@ -8,9 +8,6 @@ const apiUrlId = apiUrl + "/" + id + embeded;
 
 const resultsContainer = document.querySelector(".container");
 
-
-
-
       async function renderHTML() {
             try {
             
@@ -21,7 +18,7 @@ const resultsContainer = document.querySelector(".container");
             loadingDiv.innerHTML = "";
 
             resultsContainer.innerHTML = `
-                  <img src="${json._embedded["wp:featuredmedia"][0].source_url}" class="headimg">
+                  <img src="${json._embedded["wp:featuredmedia"][0].source_url}" class="headimg" alt="Image of ${json.title.rendered}">
                   <h1>${json.title.rendered}</h1>
                   <div class="content-rendered">${json.content.rendered}</div>
                   <div class="popup">
