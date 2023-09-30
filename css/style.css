@@ -8,6 +8,7 @@
   --nav-dark: #14161B;
   --main-background: #1A1D24;
   --main-orange: #D8B320;
+  --error-red: #f98b8b;
 }
 
 
@@ -45,7 +46,6 @@ a {
   font-size: 20px;
   font-weight: 500;
 }
-
 
 .upperright p,
 .upperright-carousel p {
@@ -220,17 +220,20 @@ footer a {
   color: #D8B320;
 }
 
-.cta-button {
+.button {
 display: inline-flex;
+font-size: 16px;
+font-family: roboto;
 padding: 10px 22px;
 justify-content: center;
 align-items: center;
 gap: 10px;
 border-radius: 8px;
-background: #D8B320;
+background: var(--main-orange);
 font-weight: bold;
 border: none;
 color: var(--main-background);
+cursor: pointer;
 }
 
 .recent-reviews {
@@ -271,7 +274,8 @@ line-height: 46px;
 .subscribe-btn:hover,
 .img-overlay:hover,
 .box-img:hover,
-.cta-button:hover,
+.button:hover,
+.submit-btn:hover,
 .logo:hover {
   opacity: 0.5;
   transition: .5s;
@@ -362,17 +366,38 @@ line-height: 46px;
 }
 
 .subscribe-btn {
-  padding: 10px 22px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+  font-size: 14px;
   border-radius: 20px;
-  border: none;
-  background: #D8B320;
-  cursor: pointer;
-  width: 116px;
 }
 
+#indexEmailError {
+  margin-bottom: 10px;
+}
+
+/* About Us */
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1020px;
+  margin: 30px auto auto auto;
+}
+
+.about-container section {
+  flex-direction: row;
+  text-align: start;
+  display: flex;
+  margin: 20px auto 20px auto;
+  color: var(--secondary-white);
+}
+
+.about-container section img {
+  width: 250px;
+  height: 400px;
+}
+
+/* Lower screen size */
 
 @media (max-width: 1070px) {
   .logo {
@@ -439,6 +464,16 @@ line-height: 46px;
     max-width: 328px;
   }
 
+
+.about-container section {
+  flex-direction: column;
+  margin: 20px 20px 20px 20px;
+}
+
+.about-container section img {
+  margin-top: 20px ;
+}
+
 }
 
 @media (max-width: 500px) {
@@ -480,9 +515,9 @@ line-height: 46px;
   display: inline-block;
   width: 80px;
   height: 80px;
-  margin: 20px 0px;
-  
+  margin: 20px 0px 60px 0px;
 }
+
 .lds-dual-ring:after {
   content: " ";
   display: block;
@@ -494,10 +529,12 @@ line-height: 46px;
   border-color: #fff transparent #fff transparent;
   animation: lds-dual-ring 1.2s linear infinite;
 }
+
 @keyframes lds-dual-ring {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -507,10 +544,9 @@ line-height: 46px;
   align-items: center;
   justify-content: center;
   display: flex;
-
 }
 
 .error {
-  color: rgba(228, 37, 37, 0.739);
+  color: var(--error-red);
   font-size: 20px;
 }

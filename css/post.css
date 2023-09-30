@@ -7,7 +7,6 @@
 }
 
 .content-rendered h2 {
-  font-size: 24px;
   margin-bottom: 5px;
 }
 
@@ -24,15 +23,12 @@
   font-family: roboto;
 }
 .content-rendered p {
-  font-size: 18px;
   color: #E4E4E4;
   font-weight: 400;
 }
 
 .container h1 {
   margin-bottom: 30px;
-  font-size: 36px;
-  justify-content: flex-start;
 }
 
 .content-rendered blockquote{
