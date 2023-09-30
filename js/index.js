@@ -1,5 +1,4 @@
 import {spinnerDiv, loadingDiv, apiUrl, embeded} from "./components/constants.js";
-import { validateEmail } from "./components/validator.js";
 import {displayError} from "./components/displayError.js";
 
 

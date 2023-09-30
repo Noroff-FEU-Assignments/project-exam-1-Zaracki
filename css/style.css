@@ -8,7 +8,6 @@
   --error-red: #f98b8b;
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -24,7 +23,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 
 h1 {
   font-size: 36px;
@@ -51,12 +49,11 @@ a {
 
 body,
 header nav ul li a,
+header nav,
 footer,
 footer a {
   color: var(--main-white);
 }
-
-
 
 /* Header & Footer */
 
@@ -73,7 +70,6 @@ header, header nav {
 }
 
 header nav {
-  color: white;
   width: 100%;
   max-width: 1020px;
   margin: auto;
@@ -110,7 +106,7 @@ header a:hover {
 footer {
   width: 100%;
   bottom: 0px;
-  background-color: #14161B;
+  background-color: var(--nav-dark);
   margin-top: auto;
 }
 .copy-2022 {
@@ -208,13 +204,6 @@ footer a {
   opacity: 0.5;
   border-radius: 7px;
   pointer-events: none;
-}
-
-
-.new-post {
-  margin-bottom: 3px;
-  font-weight: 600;
-  color: #D8B320;
 }
 
 .button {
@@ -441,7 +430,7 @@ line-height: 46px;
 }
 
 #see-more:hover {
-  color: black;
+  color: var(--main-background);
   background-color: #FFF;
   transition: .5s;
 
@@ -474,7 +463,7 @@ line-height: 46px;
   font-family: roboto;
 }
 .content-rendered p {
-  color: #E4E4E4;
+  color: var(--secondary-white);
   font-weight: 400;
 }
 
@@ -737,7 +726,6 @@ form div label {
 
 @media (max-width: 500px) {
 
-
   .img-overlay img,
   .img-overlay{
     height: 320px;
@@ -775,7 +763,6 @@ form div label {
     width: 280px;
   }
 }
-
 
 /** Loader **/
 
