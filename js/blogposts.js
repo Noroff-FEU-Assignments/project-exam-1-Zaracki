@@ -1,7 +1,7 @@
-import {apiUrl, apiEmbeded, apiPerPage, spinnerDiv, loadingDiv} from "./components/constants.js";
+import {apiUrl, embeded, perPage, spinnerDiv, loadingDiv} from "./components/constants.js";
 
 
-const apiUrlFetch = apiUrl + apiEmbeded + "&" + apiPerPage;
+const apiUrlFetch = apiUrl + embeded + "&" + perPage;
 const boxContainer = document.querySelector(".box-container");
 
 async function renderHTML() {

@@ -101,12 +101,7 @@ header nav ul li:last-child {
   float: right;
   line-height: 90px;
   cursor: pointer;
-  display: none;
   margin: 8px 210px 0px 0px;
-}
-
-#check {
-  display: none;
 }
 
 .active,
@@ -145,7 +140,9 @@ footer a {
 }
 
 .nav-list span,
-.fa-bars span {
+.fa-bars span,
+#check,
+.checkbox {
   display: none;
 }
 

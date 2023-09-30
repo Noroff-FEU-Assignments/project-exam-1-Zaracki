@@ -1,8 +1,8 @@
-import {spinnerDiv, loadingDiv} from "./components/constants.js";
+import {spinnerDiv, loadingDiv, apiUrl, embeded} from "./components/constants.js";
 import {displayError} from "./components/displayError.js";
 
 
-const apiUrl = "https://a33.no/wp-json/wp/v2/posts?_embed";
+const apiUrlEmbeded = apiUrl + embeded;
 
 const heroImg = document.querySelector(".img-overlay")
 const carousel = document.querySelector(".carousel");
@@ -16,7 +16,7 @@ const arrowIcons = document.querySelectorAll(".wrapper i");
 async function renderHTML() {
   try {
     loadingDiv.innerHTML = spinnerDiv;
-    const response = await fetch(apiUrl);
+    const response = await fetch(apiUrlEmbeded);
     const json = await response.json();
 
     

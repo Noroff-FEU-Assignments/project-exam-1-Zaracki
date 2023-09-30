@@ -1,10 +1,10 @@
-import {apiUrl, apiEmbeded, spinnerDiv, loadingDiv} from "./components/constants.js";
+import {apiUrl, embeded, spinnerDiv, loadingDiv} from "./components/constants.js";
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
-const apiUrlId = apiUrl + "/" + id + apiEmbeded;
+const apiUrlId = apiUrl + "/" + id + embeded;
 
 const resultsContainer = document.querySelector(".container");
 
