@@ -1,4 +1,5 @@
 import {apiUrl, embeded, spinnerDiv, loadingDiv} from "./components/constants.js";
+import {displayError} from "./components/displayError.js";
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);

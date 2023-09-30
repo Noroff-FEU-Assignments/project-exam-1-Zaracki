@@ -1,4 +1,5 @@
 import {apiUrl, embeded, perPage, spinnerDiv, loadingDiv} from "./components/constants.js";
+import {displayError} from "./components/displayError.js";
 
 const apiUrlFetch = apiUrl + embeded + "&" + perPage;
 const boxContainer = document.querySelector(".box-container");
