@@ -352,6 +352,10 @@ line-height: 46px;
   margin-bottom: 100px;
 }
 
+.Newsletter-container div label[for="emailIndex"] {
+  display: none;
+}
+
 .subscribe-btn {
   font-size: 14px;
   border-radius: 20px;
