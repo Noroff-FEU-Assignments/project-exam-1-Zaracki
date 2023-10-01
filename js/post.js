@@ -24,12 +24,9 @@ const resultsContainer = document.querySelector(".container");
                   <div class="content-rendered">${json.content.rendered}</div>
                   <div class="popup">
                         <img src="${json._embedded["wp:featuredmedia"][0].source_url}" class="headimg">
-                  </div>
-                  `
-                  ;
+                  </div>`;
 
-                  document.title = `Cinebite | ${json.title.rendered}`; 
-              
+                  document.title = `Cinebite | ${json.title.rendered}`;      
                   document.querySelectorAll(".container img").forEach(image =>{
                         image.onclick = () =>{
                               document.querySelector(".popup").style.display = "block";
@@ -40,12 +37,9 @@ const resultsContainer = document.querySelector(".container");
                         document.querySelector(".popup").style.display = "none";
                   }
             }
-          
             catch(error) {
                   loadingDiv.innerHTML = displayError();
             }
-          
-          
           }
           renderHTML()
 

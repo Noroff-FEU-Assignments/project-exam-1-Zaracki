@@ -13,7 +13,7 @@ async function renderHTML() {
 
     loadingDiv.innerHTML = "";
 
-    for (let i = 0; i <= 20; i++) {
+    for (let i = 0; i < json.length; i++) {
       let currentJson = json[i];
 
       boxContainer.innerHTML += `
@@ -30,11 +30,10 @@ async function renderHTML() {
   }
   catch(error) {
     loadingDiv.innerHTML = displayError();
+    console.log(error)
   }
 }
 renderHTML()
-
-
 
 const seeMoreBtn = document.querySelector("#see-more")
 let currentItem = 9;
@@ -45,7 +44,6 @@ seeMoreBtn.onclick = () => {
     boxes[i].style.display = "inline-block";
   }
   currentItem += 3;
-
   if(currentItem >= boxes.length){
     seeMoreBtn.style.display = "none";
   }
