@@ -352,6 +352,10 @@ line-height: 46px;
   margin-bottom: 100px;
 }
 
+.label-hidden {
+  visibility: hidden;
+}
+
 .Newsletter-container div label[for="emailIndex"] {
   display: none;
 }
