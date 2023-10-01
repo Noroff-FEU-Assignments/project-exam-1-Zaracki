@@ -192,6 +192,7 @@ footer a {
 
 .lowerleft p:first-child {
   font-size: 14px;
+  color: var(--main-orange);
 }
 
 .upperright,
@@ -519,7 +520,6 @@ line-height: 46px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   object-fit: cover;
 }
 
@@ -533,7 +533,7 @@ line-height: 46px;
   margin: 30px auto auto auto;
 }
 
-.about-container section {
+.about-container div {
   flex-direction: row;
   text-align: start;
   display: flex;
@@ -542,7 +542,7 @@ line-height: 46px;
   gap: 40px;
 }
 
-.about-container section img {
+.about-container div img {
   width: 250px;
   height: 400px;
 }
@@ -714,12 +714,12 @@ form div label {
     margin-right: 0px;
   }
 
-  .about-container section {
+  .about-container div {
     flex-direction: column;
     margin: 20px 20px 20px 20px;
   }
 
-  .about-container section img {
+  .about-container div img {
     margin-top: 20px ;
   }
 }

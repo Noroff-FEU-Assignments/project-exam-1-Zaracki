@@ -14,7 +14,7 @@ async function renderHTML() {
     const json = await response.json();
 
       heroImg.innerHTML += `
-      <a href="post.html?id=${json[0].id}"><img src="${json[0]._embedded["wp:featuredmedia"][0].source_url}" alt=""></a>
+      <a href="post.html?id=${json[0].id}"><img src="${json[0]._embedded["wp:featuredmedia"][0].source_url}" alt="Image of ${json[0].title.rendered}"></a>
       <div class="lowerleft">
         <p class="new-post">New</p>
         <p>${json[0].title.rendered}</p> 
