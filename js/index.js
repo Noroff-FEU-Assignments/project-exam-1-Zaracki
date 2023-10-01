@@ -23,7 +23,6 @@ async function renderHTML() {
       <p>wall.alphacoders.com</p>
     </div>
       `
-    
 
     for (let i = 1; i <= 9; i++) {
       let currentJson = json[i];
@@ -43,17 +42,13 @@ async function renderHTML() {
     buildSlider()
     
     loadingDiv.innerHTML = "";
-
   }
 
   catch(error) {
     loadingDiv.innerHTML = displayError();
   }
-
-
 }
 renderHTML()
-
 
 function buildSlider(){
   const firstImg = carousel.querySelectorAll(".carousel-img")[0];

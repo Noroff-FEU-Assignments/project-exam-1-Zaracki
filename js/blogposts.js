@@ -47,5 +47,4 @@ seeMoreBtn.onclick = () => {
   if(currentItem >= boxes.length){
     seeMoreBtn.style.display = "none";
   }
-
 }
