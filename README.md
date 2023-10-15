@@ -1,3 +1,56 @@
+# Cinebite
+
+![image](<images/Skjermbilde 2023-10-11 kl. 11.18.06.png>)
+
+A (fake) movie review blog website where you can read reviews about movies.
+
+## Description
+
+Cinebite is a website I created for my project exam at Noroff as a Front-end Developer. For this project I made a Wireframe, logo, design and prototype in Figma. This project was built using HTML, CSS and Javascript. To render the content for the blog posts and the thumbnails I fetched this from the Wordpress API to display on my site. The site was made to be responsive across all devices.
+
+## Built With
+
+HTML
+CSS
+Javascript
+
+## Getting Started
+
+### Installing
+
+1. Clone the repo:
+
+```bash
+git clone https://github.com/Noroff-FEU-Assignments/project-exam-1-Zaracki.git
+```
+
+2. Install the dependencies:
+
+```
+npm install
+```
+
+### Running
+
+To run the app, run the following commands:
+
+```bash
+npm run start
+```
+
+## Contributing
+
+If you find any issues or make any improvments you can make a pull request or contact me using the contact information provided on my profile.
+
+## Contact
+
+[My Portfolio](https://aweide.netlify.app)
+
+## Acknowledgments
+
+Used a design for my loading spinner made in CSS (free to use) from: https://loading.io/css/
+
+
 ## Project Exam 1
 
 ## Goal
